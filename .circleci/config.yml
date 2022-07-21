@@ -57,7 +57,7 @@ jobs:
       - checkout
       - add_ssh_keys:
           fingerprints:
-            - 'SHA256:Wl8umn53AvkCdEJpYLvmePq9gdr48uNCST9Aqj73QmY'
+            - '8c:8d:90:fe:c2:87:d6:ff:91:05:4e:da:f3:1c:62:26'
       - run:
           name: Deploy App
           # TODO: Install, build, deploy in both apps
