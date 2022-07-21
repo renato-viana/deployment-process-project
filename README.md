@@ -68,3 +68,7 @@ The e2e tests are using Protractor and Jasmine.
 ## License
 
 [License](LICENSE.txt)
+
+# Status Badge
+
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/renato-viana/deployment-process-project/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/renato-viana/deployment-process-project/tree/main)
