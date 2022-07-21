@@ -37,7 +37,8 @@ UserInterfaceState.xcuserstate
 node_modules
 venv/
 .env
+
 # Elastic Beanstalk Files
-.elasticbeanstalk/*
+.elasticbeanstalk/*.
 !.elasticbeanstalk/*.config.yml
 !.elasticbeanstalk/*.global.yml
