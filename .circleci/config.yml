@@ -66,6 +66,10 @@ workflows:
     jobs:
       - build
       - hold:
+          steps:
+            - add_ssh_keys:
+                fingerprints:
+                  - "SHA256:Wl8umn53AvkCdEJpYLvmePq9gdr48uNCST9Aqj73QmY renatoviana30@gmail.com"
           filters:
             branches:
               only:
