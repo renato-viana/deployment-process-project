@@ -48,16 +48,16 @@ jobs:
   deploy:
     docker:
       - image: 'cimg/base:stable'
-      # more setup needed for aws, node, elastic beanstalk
+    # more setup needed for aws, node, elastic beanstalk
     steps:
-      - add_ssh_keys:
-          fingerprints:
-            - 'SHA256:Wl8umn53AvkCdEJpYLvmePq9gdr48uNCST9Aqj73QmY'
       - node/install:
           node-version: '14.15'
       - eb/setup
       - aws-cli/setup
       - checkout
+      - add_ssh_keys:
+          fingerprints:
+            - 'SHA256:Wl8umn53AvkCdEJpYLvmePq9gdr48uNCST9Aqj73QmY'
       - run:
           name: Deploy App
           # TODO: Install, build, deploy in both apps
